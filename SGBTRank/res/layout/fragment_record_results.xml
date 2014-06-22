@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/datebox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:background="#CCCCCC"
+            android:clickable="true"
+            android:onClick="onDateClick"
+            android:text=""
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/round_prefix"
+                android:textSize="30sp" />
+            
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textSize="20sp"
+                android:text="@string/decrement_symbol"
+                android:onClick="onRoundDecrement"/>
+
+            <TextView
+                android:id="@+id/roundnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:layout_margin="10sp"
+                android:text=""
+                android:textSize="30sp" />
+            
+            <Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textSize="20sp"
+                android:text="@string/increment_symbol"
+                android:onClick="onRoundIncrement"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/courtsummary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:textSize="30sp"
+            android:onClick="onAddCourtClick"
+            android:text="@string/button_addcourt" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhk2.sgbtrank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.jhk2.sgbtrank.SGBTRankApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jhk2.sgbtrank.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jhk2.sgbtrank.RecordViewActivity"
+            android:label="@string/title_activity_record_view"
+            android:parentActivityName="com.jhk2.sgbtrank.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jhk2.sgbtrank.RecordResultsActivity"
+            android:label="@string/title_activity_record_results"
+            android:parentActivityName="com.jhk2.sgbtrank.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jhk2.sgbtrank.DailyResultsActivity"
+            android:label="@string/title_activity_daily_results"
+            android:parentActivityName="com.jhk2.sgbtrank.RecordViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="RecordViewActivity" />
+        </activity>
+        <activity
+            android:name="com.jhk2.sgbtrank.OverallRanksActivity"
+            android:label="@string/title_activity_overall_ranks"
+            android:parentActivityName="com.jhk2.sgbtrank.RecordViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="RecordViewActivity" />
+        </activity>
+        <activity
+            android:name="com.jhk2.sgbtrank.MatchHistoryActivity"
+            android:label="@string/title_activity_match_history"
+            android:parentActivityName="com.jhk2.sgbtrank.OverallRanksActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="OverallRanksActivity" />
+        </activity>
+    </application>
+
+</manifest>

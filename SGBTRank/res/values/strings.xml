@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SGBTRank</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_recordresults">Record Results</string>
+    <string name="button_viewrecords">View Records</string>
+    <string name="title_text">SGBT Record System</string>
+    <string name="button_dailyresults">Daily Results</string>
+    <string name="button_overallranks">Overall Ranks</string>
+    <string name="button_refreshdata">Refresh Data</string>
+    <string name="button_addcourt">+ Add Court</string>
+    <string name="title_activity_record_view">RecordViewActivity</string>
+    <string name="title_activity_record_results">RecordResultsActivity</string>
+    <string name="title_activity_daily_results">DailyResultsActivity</string>
+    <string name="title_activity_overall_ranks">OverallRanksActivity</string>
+    <string name="round_prefix">Round </string>
+    <string name="increment_symbol">+</string>
+    <string name="decrement_symbol">-</string>
+    <string name="title_activity_match_history">MatchHistoryActivity</string>
+
+</resources>
